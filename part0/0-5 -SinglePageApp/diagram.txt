@@ -1,0 +1,22 @@
+title Single Page App
+
+browser->server: https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: HTML-code 200 OK
+
+browser->server: https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css 200 OK
+
+browser->server: https://studies.cs.helsinki.fi/exampleapp/spa.js
+server-->browser: spa.js 200 OK
+
+note over browser:
+browser starts executing js-code
+that requests JSON data from server 
+end note
+browser->server: https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: data.json 200 OK
+
+note over browser:
+browser executes the event handler
+that renders notes to display
+end note
